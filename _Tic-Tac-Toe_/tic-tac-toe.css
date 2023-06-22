@@ -1,0 +1,75 @@
+html{
+ box-sizing: border-box;
+ margin: 0;
+ font-family: 'Finger Paint', cursive;
+ background: url(./img/School-chalkboard-1080p-wallpapers.jpeg);
+ }
+ 
+ .board-wrapper {
+   color: #fff;
+   height: 100vh;
+   padding: 1px;
+ }
+ .title {
+   text-align: center;
+   font-size: clamp(35px, 3vw, 40px);
+   margin-top: 10%;
+ }
+ .status {
+   font-size: 15px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   gap: 15px;
+ }
+ .status__light {
+   font-size: 20px;
+   color: rgb(255, 40, 40);
+ }
+ .status__light--on {
+   color: rgb(40, 255, 97);
+ }
+ .status__msg {
+   font-weight: 700;
+ }
+ .board {
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 5px;
+   width: 400px;
+   height: 400px;
+ }
+ .board__cell {
+   border: 1px solid #fff;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 100px;
+   border-radius: 3px;
+ }
+
+ .rest{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 16px;
+ }
+ .reset-btn{
+   background-color: #e9896bf1;
+   color: #fff;
+   border: none;
+   border-radius: 8px;
+   font-size: 16px;
+   padding: 8px;
+   -webkit-transition-duration: 0.2;
+ }
+ .reset-btn:hover {
+   cursor: pointer;
+   background-color:#ed0303;
+ }
